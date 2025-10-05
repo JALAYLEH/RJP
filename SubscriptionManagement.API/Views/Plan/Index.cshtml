@@ -1,0 +1,38 @@
+﻿@model IEnumerable<SubscriptionManagement.Models.ViewModels.Plan.PlanListViewModel>
+
+@{
+    ViewData["Title"] = "Plans";
+}
+
+<h2>Plans</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var plan in Model)
+        {
+            <tr>
+                <td>@plan.Name</td>
+                <td>@plan.Description</td>
+                <td>@plan.FormattedPrice</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@plan.Id" class="btn btn-sm btn-primary">Edit</a>
+                    <form asp-action="DeleteConfirmed" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@plan.Id" />
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete?')">Delete</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-success">Add New Plan</a>

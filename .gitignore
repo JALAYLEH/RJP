@@ -1,0 +1,10 @@
+# Build Folders
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.log
+*.nupkg

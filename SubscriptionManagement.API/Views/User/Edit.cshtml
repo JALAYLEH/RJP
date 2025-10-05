@@ -1,0 +1,11 @@
+﻿@model SubscriptionManagement.Models.ViewModels.User.UserViewModel
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<h2>Edit User</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.Partial("_UserForm", Model)
+</form>

@@ -1,0 +1,11 @@
+﻿@model SubscriptionManagement.Models.ViewModels.Subscription.SubscriptionViewModel
+
+@{
+    ViewData["Title"] = "Create Subscription";
+}
+
+<h2>Create Subscription</h2>
+
+<form asp-action="Create" method="post">
+    @Html.Partial("_SubscriptionForm", Model)
+</form>
