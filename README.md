@@ -5,7 +5,7 @@ The Subscription Management System is designed to manage subscription plans for 
 
 ---
 ## **ERD Diagram**
-![Alt text](images/ERD-RJP.png)
+![Entity Relationship Diagram](Images/ERD-RJP.png)
 ## **Project Structure**
 
 The project follows a 3-tier architecture:
