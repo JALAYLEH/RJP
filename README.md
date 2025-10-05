@@ -1,9 +1,11 @@
 # Subscription Management System
 
-This is a **Subscription Management System** built using **ASP.NET Core 7**, implementing a **3-tier architecture** (API, BLL, DAL). The system manages **Users**, **Plans**, and **Subscriptions**, providing CRUD operations and subscription management features.
+This is a **Subscription Management System** built using **ASP.NET Core 8**, implementing a **3-tier architecture** (API, BLL, DAL). The system manages **Users**, **Plans**, and **Subscriptions**, providing CRUD operations and subscription management features.
+The Subscription Management System is designed to manage subscription plans for users in a flexible and maintainable way. It provides CRUD operations for users, subscription plans, and user subscriptions, following industry-standard architectural patterns.
 
 ---
-
+## **ERD Diagram**
+![Alt text](images/ERD-RJP.png)
 ## **Project Structure**
 
 The project follows a 3-tier architecture:
