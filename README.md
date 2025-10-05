@@ -28,10 +28,10 @@ The project follows a 3-tier architecture:
     - Uses **AutoMapper** to map between DTOs and Entities.
     - Encapsulates all business logic before passing data to the API layer.
 
-4. **API Layer**
-    - ASP.NET Core Web API handling HTTP requests.
-    - Injects **BLL Services** via Dependency Injection.
-    - Provides CRUD endpoints for **Users**, **Plans**, and **Subscriptions**.
+4. **WEB UI Layer**
+    - ASP.NET Core Web API controllers handle HTTP requests.
+    - Injects BLL services via **Dependency Injection**.
+    - Provides RESTful endpoints for CRUD operations
 
 ---
 
@@ -65,3 +65,15 @@ public class SubscriptionWithUserAndPlanSpecification : BaseSpecification<Subscr
         AddInclude(s => s.Plan);
     }
 }
+```
+### **4. Testing**
+
+All requests endpoints are tested using Swagger.
+
+### **5. Future Goals**
+
+- Add authentication and Role based authorization.
+- Add Subscription Status tracking and automatic subscription expiry check.
+- Reporting and Analysis through charts.
+- UI Enhencements.
+
